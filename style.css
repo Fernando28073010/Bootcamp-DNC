@@ -1,0 +1,315 @@
+/*Importação da fonte direto*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --azul-dnc: #0c70F2;
+    --preto-dnc:#303030;
+    --cinza-houver:#c9c9c9;
+    --fonte-padrao: 'Inter';
+}
+
+body{
+    margin: 0px;/*Marge externa*/
+    padding: 0px;/*Marge interna*/
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.50) 19.91%, rgba(12, 112, 242, 0.00) 24.84%), #303030;/*Função de degrade*/
+    background-repeat: no-repeat;/*Não ficar repetindo as mesmas cores*/
+}
+
+/*Menu de navegação principal*/
+#principal{
+    width: 100%;
+    height: 100px;
+    background-color: var(--preto-dnc); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #bababa;
+}
+
+#menu{
+    display: flex;
+    width: 55%;
+    justify-content: space-around;/*Distribuir de maneira igualitária*/
+    align-items: center;/*Alinha ao centro*/
+    margin-left: 5%;
+}
+
+#principal div a{
+    font-family: var(--fonte-padrao);
+    font-size: 25px;
+    font-weight:600 ;/*Expessura da fonte*/
+    color: white;
+    text-decoration: none;/*Retirar o underline do link*/
+}
+
+#principal div a:hover{
+    color: var(--cinza-houver);
+}
+
+#principal button{
+    font-family:var(--fonte-padrao);
+    margin-right: 5%;
+    background-color:var(--azul-dnc);
+    border: 0px;
+    height: 39px;/*Altura*/
+    width: 80px;/*Largura*/
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    box-shadow: 3px 2px 4px 0px rgba(12, 112, 242, 0.25);/*colocar sombra*/
+    cursor: pointer;/*Para aparecer o cursor do mouse*/
+}
+
+/*Seção principal do site cabeçalho*/
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+header{
+    color: white;
+    font-family: var(--fonte-padrao);
+}
+
+header h1{
+    text-transform: uppercase;/*tranformar tudo em letra maiuscula*/
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+header .invert{
+    background-color: black;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/*Formulário*/
+form{
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-weight:600 ;
+    font-size: 30px;
+    height: 600px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form input{
+    border-radius: 10px;
+    border: 0px;
+    height: 30px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255,255, 0.9);
+}
+
+form label{
+    margin:10px 10px 10px 10px ;/*cima-top, direita- , baixo-button, esquerda-*/
+}
+
+form input::placeholder{
+    color: rgba(57, 57, 57, 0.5);
+}
+
+.ckeckbox-itens label{
+    font-size: 25px;
+}
+
+.ckeckbox-itens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input[type="checkbox"]{
+    transform: scale(1.7);/*Aumentar a escala do quadrado*/
+}
+
+input[type="submit"]{
+    background-color: var(--azul-dnc);
+    width: 100%;
+    height: 56px;
+    font-size: 32px;
+    height: 600;
+    color: white;
+    margin-top: 100px;
+    box-shadow: 0px 6px 4px 0px rgba(12, 112, 242, 0.25);
+    cursor: pointer;
+}
+
+/*Rodapé*/
+footer{
+    width: 100%;
+    background-color: var(--azul-dnc);
+    margin-top: 500px;
+}
+
+footer .linha1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+}
+
+footer h5{   
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: var(--fonte-padrao);
+    background-color: var(--preto-dnc);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 15px;
+}
+
+footer ul li{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--fonte-padrao);
+    margin: 20px 0px 20px 0px;
+}
+
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover{
+    color: var(--cinza-houver);
+}
+
+footer .endereco{
+    font-size: 18px;
+    font-family: var(--fonte-padrao);
+    font-weight: 600;
+    color: white;
+    width: 30%;
+    text-align: center;
+}
+
+footer .linha2{
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+footer .linha2 a{
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer .linha2 a:hover{
+    color: var(--cinza-houver);
+}
+
+footer .linha2 a:first-child{/*deixar uma borda no primeiro filho*/
+    border-right: 2px solid white;
+}
+/*Tornando o site Responsiva*/
+
+@media only screen and (max-width: 600px){
+            /*Menu*/
+    #principal{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #menu{
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+
+    #menu a{
+        display: flex;
+        height: 50px;
+        align-items: center;
+    }
+
+    #principal button{
+        width: 100%;
+        margin: 0px;
+    }
+
+    /*Section*/
+
+    section h1{
+        font-size: 38px;
+    }
+
+    section h2{
+        font-size: 28px;
+        padding-right: 20px;
+        padding-right: 20px;
+    }
+
+    /*Formulário*/
+
+    form{
+        width: 95%;
+        font-size: 20px;
+    }
+
+    .ckeckbox-itens label{
+        font-size: 15px;
+
+    }
+     
+    input[type="submit"]{
+        margin-top: 180px;
+    }
+    /*Ajustando o Footer com o Media Query*/
+
+   
+    footer .linha1{
+    flex-direction: column;
+
+    }
+
+    footer .endereco{
+    width: 95%;
+    margin-top: 20px;
+    }
+}
+
+
